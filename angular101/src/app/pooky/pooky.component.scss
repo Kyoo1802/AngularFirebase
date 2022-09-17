@@ -1,33 +1,58 @@
 div {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.main {
+    color: white;
     background-color: red;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    color: white;
-    display: inline;
 }
 
-span {
-    background-color: blue;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    color: white;
-    display: block;
-}
-
-p {
+.header {
+    display: flex;
     background-color: green;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    color: white;
 }
 
-h1, h2, h3, h4 {
-    color: purple;
+.titulo {
+    flex-grow: 1;
+    text-align: center;
 }
 
-h1:hover {
-    color: red;
+.body {
+    background-color: aqua;
+    color:black;
+    display: flex;
+}
+.content {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.body-image {
+    flex-grow: 1;
+}
+.imagen1{
+    max-width: 100%;
+    min-width: 450px;
+}
+.wrap-texto{
+    max-width: 450px;
+    align-self: center;
+}
+.botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    min-width: 150px;
+}
+.footer1{
+    text-align: center;
+}
+.footer2{
+    display: flex;
+    justify-content: space-evenly;
 }
